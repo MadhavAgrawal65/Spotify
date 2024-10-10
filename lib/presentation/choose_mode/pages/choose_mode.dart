@@ -120,7 +120,7 @@ class ChooseModePage extends StatelessWidget {
                             ),
                             const SizedBox(height: 15,),
                             const Text('Light Mode',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 17,
                               color: AppColors.grey,

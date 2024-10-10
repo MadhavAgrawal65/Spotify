@@ -46,7 +46,7 @@ class SignInPage extends StatelessWidget {
   Widget _registerText() {
     return const Text(
       'Sign In',
-      style: const TextStyle(
+      style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 25,
       ),
@@ -56,7 +56,7 @@ class SignInPage extends StatelessWidget {
 
   Widget _emailField(BuildContext context) {
     return TextField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Enter Email Address',
       ).applyDefaults(Theme.of(context).inputDecorationTheme),
     );
@@ -64,7 +64,7 @@ class SignInPage extends StatelessWidget {
 
   Widget _passwordField(BuildContext context) {
     return TextField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Password',
       ).applyDefaults(Theme.of(context).inputDecorationTheme),
     );
@@ -76,7 +76,7 @@ class SignInPage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             'Not a member!',
             style: TextStyle(
               fontWeight: FontWeight.w500,

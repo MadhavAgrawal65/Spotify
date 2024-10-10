@@ -68,7 +68,7 @@ class SignUpOrsignIn extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 21,),
+                    const SizedBox(height: 21,),
                     Row(
                       children: [
                         Expanded(
@@ -84,7 +84,7 @@ class SignUpOrsignIn extends StatelessWidget {
                             }, 
                             title: 'Register')
                         ),
-                        SizedBox(width: 20,),
+                        const SizedBox(width: 20,),
                         Expanded(
                           flex: 1,
                           child: TextButton(

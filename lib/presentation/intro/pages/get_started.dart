@@ -54,7 +54,7 @@ class GetStartedPage extends StatelessWidget {
                     const SizedBox(height: 21,),
                     const Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis enim purus sed phasellus. Cursus ornare id scelerisque aliquam.',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontWeight: FontWeight.w500,
                       color: AppColors.grey,
                       fontSize: 14,
@@ -65,7 +65,7 @@ class GetStartedPage extends StatelessWidget {
                       onPressed: (){
                         Navigator.push(
                           context, 
-                          MaterialPageRoute(builder: (BuildContext context) => ChooseModePage()
+                          MaterialPageRoute(builder: (BuildContext context) => const ChooseModePage()
                           )
                           );
                       }, 

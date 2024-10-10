@@ -50,7 +50,7 @@ class SignUpPage extends StatelessWidget {
   Widget _registerText() {
     return const Text(
       'Register',
-      style: const TextStyle(
+      style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 25,
       ),
@@ -60,7 +60,7 @@ class SignUpPage extends StatelessWidget {
 
   Widget _fullNameField(BuildContext context) {
     return TextField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Full Name',
       ).applyDefaults(Theme.of(context).inputDecorationTheme),
     );
@@ -68,7 +68,7 @@ class SignUpPage extends StatelessWidget {
 
   Widget _emailField(BuildContext context) {
     return TextField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Enter Email Address',
       ).applyDefaults(Theme.of(context).inputDecorationTheme),
     );
@@ -76,7 +76,7 @@ class SignUpPage extends StatelessWidget {
 
   Widget _passwordField(BuildContext context) {
     return TextField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Password',
       ).applyDefaults(Theme.of(context).inputDecorationTheme),
     );
@@ -88,7 +88,7 @@ class SignUpPage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             'Do you have an account?',
             style: TextStyle(
               fontWeight: FontWeight.w500,
