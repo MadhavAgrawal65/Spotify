@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:spotify/core/configs/themes/app_theme.dart';
 import 'package:spotify/firebase_options.dart';
 import 'package:spotify/presentation/choose_mode/bloc/theme_cubit.dart';
+import 'package:spotify/presentation/service_locator.dart';
 import 'package:spotify/presentation/splash/pages/splash.dart';
 
 void main() async {
@@ -19,6 +20,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform
   );
+  await initilizeDependencies();
   runApp(const MainApp());
 }
 class MainApp extends StatelessWidget {
