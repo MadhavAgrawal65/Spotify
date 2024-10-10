@@ -6,6 +6,8 @@ import 'package:spotify/common/widgets/buttons/helpers/is_dark.dart';
 import 'package:spotify/core/configs/assets/app_images.dart';
 import 'package:spotify/core/configs/assets/app_vectors.dart';
 import 'package:spotify/core/configs/themes/app_colors.dart';
+import 'package:spotify/presentation/auth/pages/signin.dart';
+import 'package:spotify/presentation/auth/pages/signup.dart';
 
 class SignUpOrsignIn extends StatelessWidget {
   const SignUpOrsignIn({super.key});
@@ -73,7 +75,12 @@ class SignUpOrsignIn extends StatelessWidget {
                           flex: 1,
                           child: BasicAppButton(
                             onPressed: (){
-                
+                              Navigator.push(
+                                context,
+                              MaterialPageRoute
+                              (builder: (BuildContext context) => const SignUpPage()
+                              )
+                              );
                             }, 
                             title: 'Register')
                         ),
@@ -81,7 +88,14 @@ class SignUpOrsignIn extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: TextButton(
-                            onPressed: (){}, 
+                            onPressed: (){
+                              Navigator.push(
+                                context,
+                              MaterialPageRoute
+                              (builder: (BuildContext context) => const SignInPage()
+                              )
+                              );
+                            }, 
                             child: Text('Sign In',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
